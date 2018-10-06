@@ -1,0 +1,91 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <title>Currency converter</title>
+</head>
+<body>
+      <header>
+                <nav class="navbar navbar-inverse">
+                        <div class="container">
+                          <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Currency Converter</a>
+                          </div>
+                          
+                        </div>
+                      </nav>
+        </header> 
+ <div class="container-fluid">
+       
+     <main>
+<div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-3">
+                <img src="../imgs/converter.jpg" alt="Converter Img">
+        </div>
+        <div class="col-sm-9 col-md-6 col-lg-7">
+        <div class="panel panel-default">
+                <div class="panel-body">
+                        <div class="form-group">
+                                <label for="fromCur">From Currency:</label>
+                                <select class="form-control" id="fromCurrency">
+                                        <option></option>
+                                                                                    
+                                      </select>
+                                      <label for="toCur">To Currency:</label>
+                                      <select class="form-control" id="toCurrency">
+                                              <option></option>
+                                                                                              
+                                            </select>
+
+                                            <label for="amt">Amount:</label>
+                                            <input type="text" class="form-control" id="amount">
+                              </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                    <button type="submit" class="btn btn-default" onclick="doCoversion()">Convert</button>
+                    <div>
+                                <button type="button" id="displaybtn" class="resultBtn"></button>
+</div>
+</div>
+ </div>
+</main>
+
+
+<div class="footer">
+    powered By:
+</div>
+
+
+
+<script src="../js/index.js"></script> 
+<script src="../js/idb-test/db.js"></script> 
+
+<script src="../js/converter.js"></script> 
+
+<script>
+        function doCoversion(){
+                let fromCurrencyindex = document.getElementById('fromCurrency').selectedIndex; 
+                let fromCurrencyoptions = document.getElementById('fromCurrency').options; 
+                let fromVal=fromCurrencyoptions[fromCurrencyindex].text;  
+                let toCurrencyindex = document.getElementById('toCurrency').selectedIndex; 
+                let toCurrencyoptions = document.getElementById('toCurrency').options; 
+                let toVal=fromCurrencyoptions[toCurrencyindex].text;               
+               
+                let amt=document.getElementById("amount").value;
+                let converter=new converterClass();
+                converter.convertCurrency(amt,fromVal,toVal);
+                
+                     
+}
+                
+               
+</script>
+
+</body>
+</html>

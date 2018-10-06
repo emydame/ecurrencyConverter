@@ -1,0 +1,30 @@
+.body{
+    background-color: whitesmoke;
+}
+
+.container-fluid{
+    
+    width: 80%;
+    padding: auto;
+    margin:auto;
+    min-height:70%;
+    position:relative;
+}
+
+.resultBtn{
+
+    width:350px;
+background-color:rgb(140, 140, 240);
+    padding: 10px;
+    text-align:center;
+}
+
+.footer{
+    background-color: gray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    color: white;
+    text-align: center;
+}
