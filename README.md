@@ -7,3 +7,5 @@ An application that is used to compute exchange rates for different countries' c
 E6 complaint Javascript
 Html 
 Bootstrap & css
+
+Follow this link to view page: https://emydame.github.io/ecurrencyConverter/public/page/home.html
