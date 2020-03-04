@@ -41,7 +41,7 @@ defaultOption.text = 'Choose Currency';
 
     let currencyArray=[];
 //const url="https://free.currencyconverterapi.com/api/v5/currencies";
-      const url="https://free.currencyconverterapi.com/api/v7/currencies?apiKey=415344e9c5c26cd8bc74";
+      const url="https://free.currconv.com/api/v7/currencies?apiKey=415344e9c5c26cd8bc74";
 
 fetch(url)
 .then((response) =>{
