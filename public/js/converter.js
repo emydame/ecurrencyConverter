@@ -11,8 +11,9 @@ convertCurrency(amount,fromCurrency,toCurrency) {
     let tCurrency = encodeURIComponent(toCurrency);
     let query = fCurrency + '_' + tCurrency;
   
-    const url='https://free.currencyconverterapi.com/api/v5/convert?q=' + query +'&compact=ultra';
-    //const url=`https://free.currencyconverterapi.com/api/v5/convert?q=' ${query}'&compact=ultra`;
+   // const url='https://free.currencyconverterapi.com/api/v5/convert?q=' + query +'&compact=ultra';
+    const url = 'https://api.currconv.com/api/v7/convert?q='
+            + query + '&compact=ultra&apiKey=' + 415344e9c5c26cd8bc74;
     fetch(url)
     .then((response) => response.json()) 
     .then((conversionValue)=> {
