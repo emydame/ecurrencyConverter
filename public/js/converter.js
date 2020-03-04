@@ -16,7 +16,7 @@ convertCurrency(amount,fromCurrency,toCurrency) {
   //   const url = 'https://api.currconv.com/api/v7/convert?q='
    //         + query + '&compact=ultra&apiKey=' + apiKey;
     
-   const url = https://free.currconv.com/api/v7/convert?q=' + query +'&compact=ultra&apiKey=415344e9c5c26cd8bc74;
+   const url = 'https://free.currconv.com/api/v7/convert?q=' + query +'&compact=ultra&apiKey=415344e9c5c26cd8bc74';
     console.log(url);
     fetch(url)
     .then((response) => response.json()) 
